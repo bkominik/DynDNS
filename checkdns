@@ -1,0 +1,4 @@
+#!/bin/sh
+h=`hostname -s`
+echo sys `ifconfig|grep temp|cut -d ' ' -f2`
+echo dns `dig +short aaaa $h.kominik.net`
